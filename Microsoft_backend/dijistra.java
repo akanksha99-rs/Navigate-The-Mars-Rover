@@ -40,25 +40,25 @@ public class dijistra {
 	}
 	public void dijikstraAlgo(){
 	int r = graph.length, c = graph[0].length;
-        System.out.println(r+" "+c);
+        //System.out.println(r+" "+c);
 		PriorityQueue<pair> que=new PriorityQueue<>((pair a,pair b)->{
 			return a.wsf - b.wsf;
 		});
 
 		boolean[][] vis=new boolean[r][c];
 		que.add(new pair(src[0], src[1], 0, ""));
-                   System.out.println(det[0]+" "+det[1]);
+                   //System.out.println(det[0]+" "+det[1]);
 		while(que.size() > 0) {
             pair fro = que.remove();
             int x = fro.i;
             int y = fro.j;
-            System.out.print(x+" "+y+" "+fro.st+ "->");
+            //System.out.print(x+" "+y+" "+fro.st+ "->");
 			int wsf = fro.wsf;
             String st = fro.st;
 			//if(vis[x][y]) continue;
 			vis[x][y] = true;
             if(det[0] == x && det[1] == y) {
-                System.out.println(st);
+                //System.out.println(st);
                 output = st;
                 break;
             }

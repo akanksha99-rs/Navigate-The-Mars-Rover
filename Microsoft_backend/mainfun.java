@@ -53,13 +53,13 @@ public class mainfun {
         int n=matrix.length, m= matrix[0].length;   
         Scanner sc= new Scanner(System.in);
      
-    //    for(int i=0;i<obstacle.length;i++){
-    //           int x=obstacle[i][0];
-    //           int y=obstacle[i][1];
-    //          if(x>=0&&y>=0&&x<matrix.length&&y<matrix[0].length){
-    //             matrix[x][y]=-1;
-    //            }
-    //        }
+      for(int i=0;i<obstacle.length;i++){
+               int x=obstacle[i][0];
+               int y=obstacle[i][1];
+               if(x>=0&&y>=0&&x<matrix.length&&y<matrix[0].length){
+                    matrix[x][y]=-1;
+               }
+            }
         int a=source[0];
         int b=source[1];
 

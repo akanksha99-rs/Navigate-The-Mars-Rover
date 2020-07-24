@@ -1,2 +1,2 @@
-4,9 9,22 9,11,8,14,6,17,4,20,8,18,5,12 astaralgo Allow_Diagonal Manhattan                
+4,9 9,22 6,13,6,16,7,16,8,14,9,19,9,18,9,16,10,14,9,11,8,12 Dijkstra's Allow_Diagonal false                
     
