@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Algorithms </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>
+    Choose any ONE of the following algorithm :
+  </h1>
+  <div>
+    <input type="radio" name="1" value="astaralgo" class ="algotype">
+    A* Algorithm : A* is an informed search algorithm, meaning that it is formulated in terms of weighted graphs i.e.
+    starting from a specific starting node of a graph, it aims to find a path to the given goal node having the smallest
+    cost.
+    <h3>Heuristic</h3>
+    <div id="A_star" class="sub_options">
+      <input type="radio" name="2" value="Manhattan" class="typeHeuristic" />
+      <label> Manhattan</label> <br>
+      <input type="radio" name="2" value="Euclidean" class="typeHeuristic" />
+      <label> Euclidean</label> <br>
+      <input type="radio" name="2" value="Diagonal" class="typeHeuristic"/>
+      <label> Chebyshev</label> <br>
+    </div>
+    <h3>Options</h3>
+    <div>
+      <input type="radio" name="3" value="Allow_Diagonal" class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Don't_Allow_Diagonal" class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <div>
+    <input type="radio" name="1" value="Breadth First Search"  class ="algotype">
+    Breadth First Search Algorithm : In this algorithm, we start at the tree root and explore all of the neighbor nodes
+    at the present depth prior to moving on to the nodes at the next depth level.
+    <h3>Options</h3>
+    <div>
+      <input type="radio" name="3" value="breadthfs_Allow_Diagonal" class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="breadthfs_Don't _Allow Diagonal"class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <div>
+    <input type="radio" name="1" value="Best First Search" class ="algotype">
+    Best First Search Algorithm : In best first search algorithm we use an evaluation function to decide which adjacent
+    is most promising and then explore it.
+    <h3>Heuristic</h3>
+    <div id="best_fs" class="sub_options">
+      <input type="radio" name="2" value="bestfirst_manhattan"class="typeHeuristic" />
+      <label> Manhattan</label> <br>
+      <input type="radio" name="2" value="bestfirst_euclidean"class="typeHeuristic" />
+      <label> Euclidean</label> <br>
+      <input type="radio" name="2" value="bestfirst_chebyshev"class="typeHeuristic" />
+      <label> Chebyshev</label> <br>
+    </div>
+    <h3>Options</h3>
+    <div>
+      <input type="radio" name="3" value="bestfirst_Allow_Diagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="bestfirst_Don't_Allow_Diagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <div>
+    <input type="radio" name="1" value="Dijkstra's" class ="algotype">
+    Dijkstra's Algorithm : In this algorithm, for a given source node we find the shortest path between that node and
+    every other. Hence, it can be used for finding the shortest paths from a single node to a single destination node by
+    stopping the algorithm once the shortest path to the destination node has been determined.
+    <h3>Options</h3>
+    <div>
+      <input type="radio" name="3" value="Dijkstra's_Allow_Diagonal"class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Dijkstra's_Don't_Allow_Diagonal"class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <div>
+    
+      <button class="next-page">Next Page</button>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" crossorigin="true"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

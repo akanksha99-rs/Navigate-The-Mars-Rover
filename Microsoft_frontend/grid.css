@@ -1,0 +1,24 @@
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: slategrey;
+    padding-left: 15px;
+    
+}
+.cell {
+    background-color: white;
+    /* margin: 1px; */
+    height: 39px;
+    min-width: 39px;
+    /* width: 44px; */
+    border: 1px solid;
+}
+.row{
+    display: flex;
+}
+.search{
+    padding: 20px;
+
+    position: fixed;
+    top:0;
+}
