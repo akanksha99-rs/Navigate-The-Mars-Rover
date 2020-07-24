@@ -4,14 +4,26 @@ body {
     background-size: cover;
 }
 h1{
-    color: rgb(240, 105, 166);
+    color: rgb(230, 22, 115);
     font-size: 60px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3 {
     color: rgb(240, 105, 166);
-    font-size: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4 {
+    color: rgb(240, 105, 166);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+    color: rgb(240, 105, 166);
+    font-size: 40px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -40,7 +52,19 @@ button,a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
+button {
+    transition-duration: 0.4s;
+    margin-bottom: 100px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
 .spinner {
     width: 2em;
     font-size: 30px;
