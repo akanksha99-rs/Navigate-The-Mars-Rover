@@ -46,4 +46,14 @@ button,a {
     font-size: 30px;
 }
 
+#Source {
+    color: #2ecc71;
+}
 
+#Destination {
+    color: #e74c3c;
+}
+
+#obstacles {
+    color: #bdc3c7;
+}
