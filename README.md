@@ -15,7 +15,9 @@ It comes along with a browser based web application to show how the algorithms e
 If you want to use it in Node.js, you may install it via `npm`.
 
 `cd Navigate-The-Mars-Rover
+
 npm install Navigate-The-Mars-Rover
+
 npm start`
 
 
@@ -26,7 +28,8 @@ If you have browser installed then you can install it with the following command
 
 By default browser will install pathfinding under the browser components folder, so to include it in your page do something like:
 
-`<script type = “txt/javascript”  
+`<script type = “txt/javascript” 
+
 src ="script.js"></script>`
 
  
@@ -35,9 +38,12 @@ src ="script.js"></script>`
 To build a grid-map of width and height 39 pixels, the code is as follows:
 
 `<div id="grid">
+
         <%for(let i=0;i<23;i++){%>
+        
         <div class="row">
-            <%for(let j=0;j<48;j++){%>
+        
+            <%for(let j=0;j<48;j++) {%> 
             <div class="cell" rid=<%=i%> cid=<%=j%>>
 
             </div>
@@ -48,20 +54,35 @@ By default, all the cells in the grid will be able to be walked through. First w
 For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coordinate (from left to right), and 0 is the y coordinate (from up to down). Similarly we will select our destination and obstacles. The code for the same is as follows:
 
 `for (let i = 0; i < allCells.length; i++) {
+
     allCells[i].addEventListener("click", function () {
+    
         let rid = Number(allCells[i].getAttribute("rid"));
+        
         let cid = Number(allCells[i].getAttribute("cid"));
+        
         if (!src) {
+        
             allCells[i].style.backgroundColor = "green"
+            
             src = [rid, cid];
+            
             console.log(src);
+            
         } else if (!dest) {
+        
             allCells[i].style.backgroundColor = "red"
+            
             dest = [rid, cid];
+            
             console.log(dest);
+            
         } else {
+        
             allCells[i].style.backgroundColor = "gray"
+            
             obstacles.push([rid, cid]);
+            
         }
     })
 }`
@@ -86,7 +107,9 @@ To build a path-finder, say, AStarFinder we will create an object in the mainfun
 
 
 `astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
+
  isDiagonal);
+ 
 a.astarAlgo();`
 
 To find a path from (1, 2) to (4, 2), (Note: both the start point and end point should be walkable), we are passing the arguments in the constructor of the object as required by the algorithm.
@@ -125,52 +148,74 @@ Layout:
 .
 
 `|-- lib          # browser distribution
+
 |-- src          # source code (algorithms only)
+
 |-- test         # test scripts
+
 |-- utils        # build scripts
+
 |-- benchmark    # benchmarks
+
 `-- visual       # visualization`
+
 
 Make sure you have node.js installed, then use npm to install the dependencies:
 
 
 `npm install -d` 
 
+
 The build system uses gulp, so make sure you have it installed:
 
 `npm install -d -g gulp`
+
 
 To build the browser distribution:
 
 `gulp compile`
 
+
 To run the tests (algorithms only, not including the visualization) with mocha and should.js First install mocha:
 
 `npm install -d -g mocha`
+
 
 Then run the tests:
 
 `gulp test`
 
+
 To run the benchmarks:
 
 `gulp bench`
+
 
 Or if you are feeling lazy, the default gulp task does everything(except running the benchmarks):
 
 `Gulp`
 
+
 ## *Technologies* :
 
 Listing down the following technologies:
+
 •	Hyper Text Markup Language (HTML)
+
 •	Cascading Style Sheets (CSS)
+
 •	JavaScript (JS)
+
 •	JavaScript Object Notation (Json) 
+
 •	Embedded JavaScript (EJS)
+
 •	Java Programming
+
 •	Node Package Manager (NPM)
+
 •	Node JS
+
 
 
 ## *Result* :
