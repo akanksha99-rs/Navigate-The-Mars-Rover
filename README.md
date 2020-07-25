@@ -105,6 +105,7 @@ We pass the grid matrix from grid.ejs and script.js to the server file. It will 
 ];`
 
 Currently there are 4 path-finders bundled in this library, namely:
+
  •	**AStar Finder** *
  
  • **Best First Finder**
@@ -112,6 +113,7 @@ Currently there are 4 path-finders bundled in this library, namely:
  •	**Breadth First Finder** *
  
  •	**Dijkstra Finder**  *
+ 
 In these algorithms, we have two option which are allow diagonal and don’t allow diagonal.
 Also, Note that only the finders with trailing asterisks are guaranteed to find the shortest path.
 To build a path-finder, say, AStarFinder we will create an object in the mainfun.java file and the call the constructors and pass the arguments:
