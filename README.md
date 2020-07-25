@@ -14,10 +14,10 @@ It comes along with a browser based web application to show how the algorithms e
 
 If you want to use it in Node.js, you may install it via `npm`.
 
-`npm install Navigate-The-Mars-Rover`
+`cd Navigate-The-Mars-Rover
+npm install Navigate-The-Mars-Rover
+npm start`
 
-Then, in your program:
-`var PF = require('Navigate-The-Mars-Rover');`
 
 ## *Browser* :
 
@@ -25,6 +25,7 @@ If you have browser installed then you can install it with the following command
 `git link` 
 
 By default browser will install pathfinding under the browser components folder, so to include it in your page do something like:
+
 `<script type = “txt/javascript”  
 src ="script.js"></script>`
 
@@ -32,6 +33,7 @@ src ="script.js"></script>`
 ## *Basic Usage* :
 
 To build a grid-map of width and height 39 pixels, the code is as follows:
+
 `<div id="grid">
         <%for(let i=0;i<23;i++){%>
         <div class="row">
@@ -44,6 +46,7 @@ To build a grid-map of width and height 39 pixels, the code is as follows:
 
 By default, all the cells in the grid will be able to be walked through. First we will click on the cell where we want our source to be placed, then we will click on the cell where we want our destination to be placed. After placing the source and destination we will click on the cell where we want our obstacles to be placed in between the path.
 For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coordinate (from left to right), and 0 is the y coordinate (from up to down). Similarly we will select our destination and obstacles. The code for the same is as follows:
+
 `for (let i = 0; i < allCells.length; i++) {
     allCells[i].addEventListener("click", function () {
         let rid = Number(allCells[i].getAttribute("rid"));
@@ -65,6 +68,7 @@ For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coord
 
 We pass the grid matrix from grid.ejs and script.js to the server file. It will initiate all the cells in the grid with the same walkability indicated by the matrix. When we select our source, destination and obstacles, 1 will be our source, 2 will be our destination , 0 means that the cell is walkable and -1 means obstacles are there making them unwalkable.
 
+
 `int[][] matrix = [
     [1, 0, 0, -1, 0],
     [-1, 0, 0, 0, -1],
@@ -80,6 +84,7 @@ In these algorithms, we have two option which are allow diagonal and don’t all
 Also, Note that only the finders with trailing asterisks are guaranteed to find the shortest path.
 To build a path-finder, say, AStarFinder we will create an object in the mainfun.java file and the call the constructors and pass the arguments:
 
+
 `astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
  isDiagonal);
 a.astarAlgo();`
@@ -87,6 +92,7 @@ a.astarAlgo();`
 To find a path from (1, 2) to (4, 2), (Note: both the start point and end point should be walkable), we are passing the arguments in the constructor of the object as required by the algorithm.
 Source and destination will be an array of coordinates.
 For the matrix defined previously, the path will be :
+
 
 `[ [ 1, 2 ], [ 1, 1 ], [ 2, 1 ], [ 3, 1 ], [ 3, 2 ], [ 4, 2 ] ]`
 
@@ -117,6 +123,7 @@ To build a BestFirstFinder with diagonal movement allowed and a custom heuristic
 
 Layout:
 .
+
 `|-- lib          # browser distribution
 |-- src          # source code (algorithms only)
 |-- test         # test scripts
@@ -126,27 +133,35 @@ Layout:
 
 Make sure you have node.js installed, then use npm to install the dependencies:
 
+
 `npm install -d` 
 
 The build system uses gulp, so make sure you have it installed:
+
 `npm install -d -g gulp`
 
 To build the browser distribution:
+
 `gulp compile`
 
 To run the tests (algorithms only, not including the visualization) with mocha and should.js First install mocha:
+
 `npm install -d -g mocha`
 
 Then run the tests:
+
 `gulp test`
 
 To run the benchmarks:
+
 `gulp bench`
 
 Or if you are feeling lazy, the default gulp task does everything(except running the benchmarks):
+
 `Gulp`
 
 ## *Technologies* :
+
 Listing down the following technologies:
 •	Hyper Text Markup Language (HTML)
 •	Cascading Style Sheets (CSS)
