@@ -240,6 +240,20 @@ Listing down the following technologies:
 ## *Result* :
 The web application is functional on http://localhost:3000/
 
+![Screenshot (1347)](https://user-images.githubusercontent.com/54959994/88456403-386ad680-ce9b-11ea-9034-4e88eb213dfd.png)
+![Screenshot (1348)](https://user-images.githubusercontent.com/54959994/88456404-3e60b780-ce9b-11ea-840f-d0ce7f0fdcc1.png)
+![Screenshot (1349)](https://user-images.githubusercontent.com/54959994/88456405-41f43e80-ce9b-11ea-852f-dada1175f909.png)
+![Screenshot (1350)](https://user-images.githubusercontent.com/54959994/88456409-46b8f280-ce9b-11ea-9cb3-6f0b9e1069d3.png)
+![Screenshot (1351)](https://user-images.githubusercontent.com/54959994/88456413-4ae51000-ce9b-11ea-94db-af6d40859e63.png)
+![Screenshot (1352)](https://user-images.githubusercontent.com/54959994/88456416-50425a80-ce9b-11ea-86a3-6f84d4669b56.png)
+![Screenshot (1353)](https://user-images.githubusercontent.com/54959994/88456417-546e7800-ce9b-11ea-94ff-3d3bb83e3f4c.png)
+![Screenshot (1354)](https://user-images.githubusercontent.com/54959994/88456423-5801ff00-ce9b-11ea-918a-9da1152f65dc.png)
+![Screenshot (1355)](https://user-images.githubusercontent.com/54959994/88456429-5d5f4980-ce9b-11ea-8304-5e1ccdf5d4bc.png)
+![Screenshot (1356)](https://user-images.githubusercontent.com/54959994/88456433-63552a80-ce9b-11ea-8376-ffc41cc6be7e.png)
+![Screenshot (1357) - Copy](https://user-images.githubusercontent.com/54959994/88456435-651eee00-ce9b-11ea-819d-16fa43ef6626.png)
+![Screenshot (1358)](https://user-images.githubusercontent.com/54959994/88456437-66e8b180-ce9b-11ea-993f-5d620a0025cb.png)
+![Screenshot (1359)](https://user-images.githubusercontent.com/54959994/88456440-68b27500-ce9b-11ea-87f2-bf4478c4abe3.png)
+![Screenshot (1360)](https://user-images.githubusercontent.com/54959994/88456442-6a7c3880-ce9b-11ea-9ad1-feb49baa5fba.png)
 
 ## *Conclusion* :
 
