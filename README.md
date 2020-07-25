@@ -1,4 +1,5 @@
-**# Navigate-The-Mars-Rover**
+# **Navigate-The-Mars-Rover**
+
 Designing a browser based web application which will help the Mars Curiosity Rover find the shortest path between two points while avoiding obstacles on the way.
  
 
@@ -11,12 +12,12 @@ It comes along with a browser based web application to show how the algorithms e
  
 ## *Server* :
 
-If you want to use it in Node.js, you may install it via npm.
+If you want to use it in Node.js, you may install it via `npm`.
 
-'npm install Navigate-The-Mars-Rover'
+`npm install Navigate-The-Mars-Rover`
 
 Then, in your program:
-'var PF = require('Navigate-The-Mars-Rover');'
+`var PF = require('Navigate-The-Mars-Rover');`
 
 ## *Browser* :
 
@@ -24,14 +25,14 @@ If you have browser installed then you can install it with the following command
 `git link` 
 
 By default browser will install pathfinding under the browser components folder, so to include it in your page do something like:
-'<script type = “txt/javascript”  
-src ="script.js"></script>'
+`<script type = “txt/javascript”  
+src ="script.js"></script>`
 
  
 ## *Basic Usage* :
 
 To build a grid-map of width and height 39 pixels, the code is as follows:
-'<div id="grid">
+`<div id="grid">
         <%for(let i=0;i<23;i++){%>
         <div class="row">
             <%for(let j=0;j<48;j++){%>
@@ -39,11 +40,11 @@ To build a grid-map of width and height 39 pixels, the code is as follows:
 
             </div>
             <%}%>
-    </div>'
+    </div>`
 
 By default, all the cells in the grid will be able to be walked through. First we will click on the cell where we want our source to be placed, then we will click on the cell where we want our destination to be placed. After placing the source and destination we will click on the cell where we want our obstacles to be placed in between the path.
 For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coordinate (from left to right), and 0 is the y coordinate (from up to down). Similarly we will select our destination and obstacles. The code for the same is as follows:
-'for (let i = 0; i < allCells.length; i++) {
+`for (let i = 0; i < allCells.length; i++) {
     allCells[i].addEventListener("click", function () {
         let rid = Number(allCells[i].getAttribute("rid"));
         let cid = Number(allCells[i].getAttribute("cid"));
@@ -60,34 +61,34 @@ For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coord
             obstacles.push([rid, cid]);
         }
     })
-}'
+}`
 
 We pass the grid matrix from grid.ejs and script.js to the server file. It will initiate all the cells in the grid with the same walkability indicated by the matrix. When we select our source, destination and obstacles, 1 will be our source, 2 will be our destination , 0 means that the cell is walkable and -1 means obstacles are there making them unwalkable.
 
-'int[][] matrix = [
+`int[][] matrix = [
     [1, 0, 0, -1, 0],
     [-1, 0, 0, 0, -1],
     [0, 0, -1, 0, 2],
-];'
+];`
 
 Currently there are 4 path-finders bundled in this library, namely:
 # •	AStar Finder *
 # • Best First Finder
 # •	Breadth First Finder *
 # •	Dijkstra Finder*
-**In these algorithms, we have two option which are allow diagonal and don’t allow diagonal.
-Also, Note that only the finders with trailing asterisks are guaranteed to find the shortest path.**
+In these algorithms, we have two option which are allow diagonal and don’t allow diagonal.
+Also, Note that only the finders with trailing asterisks are guaranteed to find the shortest path.
 To build a path-finder, say, AStarFinder we will create an object in the mainfun.java file and the call the constructors and pass the arguments:
 
-'astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
+`astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
  isDiagonal);
-a.astarAlgo();'
+a.astarAlgo();`
 
 To find a path from (1, 2) to (4, 2), (Note: both the start point and end point should be walkable), we are passing the arguments in the constructor of the object as required by the algorithm.
 Source and destination will be an array of coordinates.
 For the matrix defined previously, the path will be :
 
-'[ [ 1, 2 ], [ 1, 1 ], [ 2, 1 ], [ 3, 1 ], [ 3, 2 ], [ 4, 2 ] ]'
+`[ [ 1, 2 ], [ 1, 1 ], [ 2, 1 ], [ 3, 1 ], [ 3, 2 ], [ 4, 2 ] ]`
 
 
 •	We can change the position of source ,destination and obstacles as per our requirement .Even we can use the same grid multiple times because calling of the function takes place from the main function and not the algorithm directly.
@@ -116,34 +117,34 @@ To build a BestFirstFinder with diagonal movement allowed and a custom heuristic
 
 Layout:
 .
-'|-- lib          # browser distribution
+`|-- lib          # browser distribution
 |-- src          # source code (algorithms only)
 |-- test         # test scripts
 |-- utils        # build scripts
 |-- benchmark    # benchmarks
-`-- visual       # visualization'
+`-- visual       # visualization`
 
 Make sure you have node.js installed, then use npm to install the dependencies:
 
-'npm install -d' 
+`npm install -d` 
 
 The build system uses gulp, so make sure you have it installed:
-'npm install -d -g gulp'
+`npm install -d -g gulp`
 
 To build the browser distribution:
-'gulp compile'
+`gulp compile`
 
 To run the tests (algorithms only, not including the visualization) with mocha and should.js First install mocha:
-'npm install -d -g mocha'
+`npm install -d -g mocha`
 
 Then run the tests:
-'gulp test'
+`gulp test`
 
 To run the benchmarks:
-'gulp bench'
+`gulp bench`
 
 Or if you are feeling lazy, the default gulp task does everything(except running the benchmarks):
-'Gulp'
+`Gulp`
 
 ## *Technologies* :
 Listing down the following technologies:
@@ -158,7 +159,7 @@ Listing down the following technologies:
 
 
 ## *Result* :
-The web application is functional on (http://localhost:3000/)
+The web application is functional on http://localhost:3000/
 
 
 ## *Conclusion* :
