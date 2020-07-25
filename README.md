@@ -21,7 +21,7 @@ Then, in your program:
 ## *Browser* :
 
 If you have browser installed then you can install it with the following command:
-'Git link' 
+`git link` 
 
 By default browser will install pathfinding under the browser components folder, so to include it in your page do something like:
 '<script type = “txt/javascript”  
