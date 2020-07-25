@@ -144,9 +144,9 @@ We will click on Don’t Allow Diagonal option while selecting the algorithm.
 For AStarFinder, BestFirstFinder, you may indicate which heuristic function to use.
 The predefined heuristics are :
 
-# •	Manhattan 
-# •	Euclidean
-# •	Chebyshev (Diagonal)
+ •	**Manhattan** 
+ •	**Euclidean**
+ •	**Chebyshev (Diagonal)**
 
 To use the Chebyshev (diagonal) heuristic, we will select the heuristic while selecting the algorithm.
 To build a BestFirstFinder with diagonal movement allowed and a custom heuristic function, we will choose the Best First Search Algorithm, Manhattan Heuristic and Allow Diagonal Option. 
