@@ -54,7 +54,7 @@ To build a grid-map of width and height 39 pixels, the code is as follows:
             </div>
             <%}%>
     </div>
-    ```
+```
 
 By default, all the cells in the grid will be able to be walked through. First we will click on the cell where we want our source to be placed, then we will click on the cell where we want our destination to be placed. After placing the source and destination we will click on the cell where we want our obstacles to be placed in between the path.
 For example, to set the cell at (0, 0) to be un-walkable, where 0 is the x coordinate (from left to right), and 0 is the y coordinate (from up to down). Similarly we will select our destination and obstacles. The code for the same is as follows:
@@ -114,7 +114,8 @@ Also, Note that only the finders with trailing asterisks are guaranteed to find 
 To build a path-finder, say, AStarFinder we will create an object in the mainfun.java file and the call the constructors and pass the arguments:
 
 
-```astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
+```
+astaralgo a=new astaralgo(matrix,source,destination,typeheuristic,
 
  isDiagonal);
  
